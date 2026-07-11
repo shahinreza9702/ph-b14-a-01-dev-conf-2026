@@ -3,63 +3,95 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    font-family: "Arimo", "Inter", sans-serif;
+body {
+  font-family: "Arimo", "Inter", sans-serif;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
 
 /**
 *Re-usabe css
 **/
-.btn{
-    padding: 8px 16px;
-    border: none;
+.btn {
+  padding: 1rem 2rem;
+  border: none;
 }
-.btn-primary{
-    background-color: #1D4ED8;
+.btn-primary {
+  background-color: #1d4ed8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.header-section {
+  padding: 20px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  gap: 20px;
+}
+.menu-items {
+  margin: 5px;
+}
+.menu-items a {
+  text-decoration: none;
+  color: #575757;
+  font-weight: 500;
+  font-size: 16px;
+}
+.menu-items a:hover {
+  color: #1d4ed8;
+}
+
+.site-main {
+  width: 100%;
+}
+.hero {
+    min-height: 100vh;
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.5)
+    ), url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 8px;
-    cursor: pointer;
 }
-.btn-primary:hover{
-    background-color: #fff;
-    color: #1D4ED8;
-    border: 1px solid #1D4ED8;
+.hero-container{
+    min-height: 70vh;
+    flex-direction: column;
 }
-
-.d-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.header-section{
-    padding: 20px 0;
-}
-
-.navbar ul{
-    list-style: none;
+.hero-text{
+    text-align: center;
+    max-width: 70%;
+    flex-direction: column;
+    font-size: 1.5rem;
     gap: 20px;
-    
 }
-.menu-items{
-    margin: 5px;
+.hero-text h1{
+    font-size: 4.6rem;
 }
-.navbar ul a{
-    text-decoration: none;
-    color: #575757;
-    font-weight: 500;
-    font-size: 16px;
+.hero-text p{
+    line-height: 30px;
+    font-size: 1.5rem;
 }
-.navbar ul a:hover{
-    color: #1D4ED8;
-}
-
