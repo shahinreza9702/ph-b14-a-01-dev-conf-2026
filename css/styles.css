@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary: #2563EB;
+  --accent: #60A5FA;
+  --bg: #FFFFFF;
+  --text: #0D1B2A;
+  --muted: #64748B;
+  --border: #E5E7EB;
+  --card-bg: #F8FAFC;
+  --radius: 22px;
+  --transition: 0.3s ease;
+}
+
 body {
   font-family: "Arimo", "Inter", sans-serif;
 }
@@ -240,6 +252,152 @@ body {
 }
 .pricing-card .btn {
   margin-top: auto;
+}
+
+
+.community-networking {
+  background: var(--bg);
+}
+
+.community-header {
+  max-width: 760px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.section-description {
+  margin-top: 18px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.networking-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.network-card {
+  flex: 1 1 260px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.network-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(37, 99, 235, 0.25);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.network-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 22px;
+}
+
+.network-card h3 {
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 1.35rem;
+}
+
+.network-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.community-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 38px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #EFF6FF, #FFFFFF);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+}
+
+.cta-content {
+  flex: 1;
+}
+
+.cta-content h3 {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.cta-content p {
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.btn-gradient {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+@media (max-width: 768px) {
+  .community-header {
+    margin-bottom: 40px;
+  }
+
+  .networking-list {
+    flex-direction: column;
+  }
+
+  .community-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px 24px;
+  }
+
+  .cta-content h3 {
+    font-size: 1.7rem;
+  }
+
+  .btn-gradient {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 
