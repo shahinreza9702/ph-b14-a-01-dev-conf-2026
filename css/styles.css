@@ -16,7 +16,7 @@ body {
 *Re-usabe css
 **/
 .btn {
-  padding: 1rem 2rem;
+  padding: .8rem 1.8rem;
   border: none;
 }
 .btn-primary {
@@ -41,6 +41,11 @@ body {
 
 .section {
   padding: 60px 0;
+  margin-bottom: 40px;
+}
+.section-title{
+    font-size: 2rem;
+    color: #000102;
 }
 
 .header-section {
@@ -94,4 +99,40 @@ body {
 .hero-text p{
     line-height: 30px;
     font-size: 1.5rem;
+}
+
+.speakers-container{
+    flex-direction: column;
+    gap: 30px;
+}
+.speakers-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.speakers-items{
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+}
+.speakers-items img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.speakers-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 20px;
+}
+.speakers-label{
+    color: #2563EB;
+    font-size: 12px;
+    font-weight: 500;
+}
+.speakers-name{
+    color: #0D1B2A;
+}
+.speakers-position{
+    color: #575757;
+    font-size: 14px;
 }
